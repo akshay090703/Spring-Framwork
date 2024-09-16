@@ -1,0 +1,33 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+<!--    <bean id="alien" class="org.example.Alien" scope="prototype" />-->
+    <bean id="alien" class="org.example.Alien" autowire="byType" >
+<!--        by default uses the sequence to assign values-->
+<!--        <constructor-arg type="org.example.Laptop" ref="laptop" />-->
+<!--        <constructor-arg type="int" value="21" />-->
+
+<!--        <constructor-arg index="1" ref="laptop" />-->
+<!--        <constructor-arg index="0" value="21" />-->
+
+<!--        when we want that the order should not matter we use the annotation on top of the constructor-->
+<!--        <constructor-arg name="lap" ref="laptop" />-->
+<!--        <constructor-arg name="age" value="21" />-->
+
+        <property name="age" value="21" />
+<!--        <property name="com" ref="laptop" />-->
+<!--        <property name="com" ref="com" />-->
+        <property name="com">
+<!--            can only be used by this alien bean not by anyone else-->
+            <bean id="laptop" class="org.example.Laptop" scope="singleton" lazy-init="true" />
+        </property>
+    </bean>
+
+<!--    <bean id="laptop" class="org.example.Laptop" scope="singleton" lazy-init="true" />-->
+<!--    <bean id="com" class="org.example.Desktop" primary="true"  lazy-init="true" />-->
+</beans>
