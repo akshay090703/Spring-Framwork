@@ -34,7 +34,6 @@ public class JobController {
 
     @GetMapping("viewalljobs")
     public String viewAllJobs(Model m) {
-        System.out.println("fssdf");
         List<jobPost> jobs = service.getAllJobs();
         m.addAttribute("jobPosts", jobs);
 
