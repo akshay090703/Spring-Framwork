@@ -29,7 +29,7 @@ public class JobRestController {
     }
 
     // meaning it can only consume the xml and not json, error Unsupported media type if json used
-    @PostMapping(path = "/jobPost", consumes = {"application/xml"})
+    @PostMapping(path = "/jobPost", consumes = {"application/json"})
     public JobPost addJob(@RequestBody JobPost jobPost) {
         service.addJob(jobPost);
         return service.getJob(jobPost.getPostId());
@@ -45,5 +45,17 @@ public class JobRestController {
     public void deleteJob(@PathVariable("postId") int postId) {
         service.deleteJob(postId);
 //        return service.getAllJobs().size();
+    }
+
+    @GetMapping("jobPosts/keyword/{keyword}")
+    public List<JobPost> searchByKeyword(@PathVariable("keyword") String keyword) {
+        return service.search(keyword);
+    }
+
+    @GetMapping("load")
+    public String loadData() {
+        service.load();
+
+        return "Success";
     }
 }
