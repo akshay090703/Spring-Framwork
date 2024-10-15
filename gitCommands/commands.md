@@ -16,4 +16,8 @@
    to discard changes in working directory
 9. git commit -a -m "commit_message"
    this "-a" skips the staging step
-10.
+10. git diff --stage
+    to see the changes between the different commits
+    "--stage" is to see changes between the staged changes and last commit
+11. git add .
+    add on the files to the staging area in the directory
