@@ -10,3 +10,10 @@
    used to unstage a file from git
 6. git log
    to get the history of the repository
+7. git commit -m <"commit_message">
+   commits the changes of the repo and add the commit message
+8. git restore <file>
+   to discard changes in working directory
+9. git commit -a -m "commit_message"
+   this "-a" skips the staging step
+10.
