@@ -23,4 +23,13 @@
     add on the files to the staging area in the directory
 12. git rm --cached commands.md
     used to remove a particular file from the git directory and now you can remove it from your working environment too
-13.
+13. git clone <address of the repo>
+    clones the repository from the github
+14. echo "# git-tutorial-demo" >> README.md
+    push the text into a file and create a file if not there
+15. git push -u origin main
+    used to push the file from local copy to the remote copy
+16. git remote add origin "git ssh or https link"
+    used to connect the local environment to the github repo environment
+17. git remote -v
+    to see which os the origin, for fetch and push
