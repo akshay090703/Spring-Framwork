@@ -1,0 +1,7 @@
+
+MicroservicesQuizApp/api-gateway/src/main/resources/application.properties
+MicroservicesQuizApp/QuestionService/src/main/resources/application.properties
+MicroservicesQuizApp/QuizService/src/main/resources/application.properties
+MicroservicesQuizApp/service-registry/src/main/resources/application.properties
+MonolithicQuizApp/src/main/resources/application.properties
+SpringOAuth2/src/main/resources/application.properties
