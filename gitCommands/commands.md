@@ -33,3 +33,15 @@
     used to connect the local environment to the github repo environment
 17. git remote -v
     to see which os the origin, for fetch and push
+18. git tag
+    shows all the tags given till now
+19. git tag -a v1.0 -m "1st release"
+    gives the tag to the repo
+20. git push origin v1.0
+    pushes the tag to the remote repo
+21. git show <tag>
+    shows info about the tag
+22. git checkout feature1
+    switches to feature1 branch
+23. git checkout -b feature1
+    creates a new branch
