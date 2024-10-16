@@ -41,7 +41,7 @@
     pushes the tag to the remote repo
 21. git show <tag>
     shows info about the tag
-22. git checkout feature1
+22. git checkout feature1 or git switch
     switches to feature1 branch
 23. git checkout -b feature1
     creates a new branch
