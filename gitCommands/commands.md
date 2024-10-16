@@ -43,5 +43,13 @@
     shows info about the tag
 22. git checkout feature1 or git switch
     switches to feature1 branch
-23. git checkout -b feature1
+23. git checkout -b feature1 or git switch -c feature1
     creates a new branch
+24. git branch
+    shows all local branches
+25. git branch --all
+    shows local as well as remote branch
+26. git switch -
+    goes back to the previous branch
+27. git branch -d feature2
+    deletes a branch
