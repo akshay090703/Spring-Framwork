@@ -57,3 +57,5 @@
     merge the current branch with the given branch
 29. git pull origin main
     pulls the updated main branch
+30. git rebase <branch name>
+    Almost same as merge but no extra line in the graph and makes the merge more clean
